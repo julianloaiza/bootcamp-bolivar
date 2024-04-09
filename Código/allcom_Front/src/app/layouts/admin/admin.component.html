@@ -1,0 +1,7 @@
+<div *ngIf="active; else elseBlock">
+  <app-admin-header (unlogged)="offLogged()"></app-admin-header>
+  <router-outlet class = "group"></router-outlet>
+</div>
+<ng-template #elseBlock>
+  <app-admin-login (logged)="onLogged()"></app-admin-login>
+</ng-template>

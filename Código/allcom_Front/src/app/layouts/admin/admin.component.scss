@@ -1,0 +1,14 @@
+.group{
+  margin-top: 5rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  z-index: 0;
+  position: relative;
+  justify-content: center;
+}
+
+@media screen and (max-width: 60em) {
+  .group {
+    margin-top: 0rem;
+  }
+}
