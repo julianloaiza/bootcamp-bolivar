@@ -1,0 +1,39 @@
+.group{
+  margin-top: 4rem;
+  z-index: 0;
+
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+
+  .mat-card-header {
+    margin-top: -2rem;
+  }
+
+  .mat-card-subtitle {
+    margin-top: 1rem;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.class-card {
+  margin: auto;
+  margin-top: 2rem;
+  max-width: 20rem;
+}
+
+@media screen and (max-width: 60em) {
+  .group {
+    margin-top: 0rem;
+  }
+  .class-card {
+    margin-top: 1rem;
+  }
+}

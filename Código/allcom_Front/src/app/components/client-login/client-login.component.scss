@@ -1,0 +1,23 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.class-card {
+  margin: auto;
+  margin-top: 2rem;
+  max-width: 20rem;
+}
+
+.login {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+
+  .mat-card-header {
+    margin-top: -2rem;
+  }
+
+  .mat-card-subtitle {
+    margin-top: 1rem;
+  }
+}

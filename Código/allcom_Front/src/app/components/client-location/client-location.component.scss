@@ -1,0 +1,28 @@
+table {
+  width: 100%;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+.content {
+  margin-top: 30rem;
+}
+
+.filtro {
+  width: 50%;
+  margin-left: 25%;
+}
+
+td {
+  word-spacing: 1rem;
+}
+
+@media screen and (max-width: 40em) {
+  td {
+    word-spacing: normal;
+  }
+}
+

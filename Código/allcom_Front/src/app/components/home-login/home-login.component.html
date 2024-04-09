@@ -1,0 +1,40 @@
+<mat-toolbar color="primary">
+  <span>AllCom</span>
+</mat-toolbar>
+
+<div class = login>
+
+  <mat-card class="class-card">
+  <mat-card-header>
+    <mat-card-title>Admin</mat-card-title>
+    <mat-card-subtitle>Portal web</mat-card-subtitle>
+    <mat-card-actions>
+      <button mat-raised-button color = "primary" (click)="adminLogin()"> Iniciar sesión </button>
+    </mat-card-actions>
+  </mat-card-header>
+  <mat-divider inset></mat-divider>
+  <img mat-card-image src="../../../assets/admin.png" alt="Administrador">
+</mat-card>
+
+<div id = "logo" >
+  <img mat-card-image  src="../../../assets/logo.png" alt="Cliente">
+  <h1> Soluciones en publicidad</h1>
+  <h3> Somos la plataforma #1 para clientes que quieran desplegar
+    sus mensajes publicitarios conforme a un accesible plan de facturación mensual</h3>
+</div>
+
+<mat-card class="class-card">
+  <mat-card-header >
+    <mat-card-title>Cliente</mat-card-title>
+    <mat-card-subtitle>Portal web</mat-card-subtitle>
+    <mat-card-actions>
+      <button mat-raised-button color = "primary" (click)="clientLogin()"> Iniciar sesión </button>
+    </mat-card-actions>
+  </mat-card-header>
+  <mat-divider inset></mat-divider>
+  <img mat-card-image id = "cliente" src="../../../assets/cliente.png" alt="Cliente">
+
+</mat-card>
+
+<br><br>
+</div>

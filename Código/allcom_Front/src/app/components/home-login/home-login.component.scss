@@ -1,0 +1,66 @@
+
+.mat-card-header {
+  text-align: center;
+  justify-content: center;
+}
+
+.class-card {
+  margin: auto;
+  margin-top: 2rem;
+  max-width: 20rem;
+}
+
+#cliente {
+  margin-top: 2.95rem;
+  margin-bottom: 2.95rem;
+}
+
+#logo {
+  display: none;
+}
+
+.login {
+  width: 100%;
+  margin-bottom: 10rem;
+  text-align: center;
+  justify-content: center;
+}
+
+.mat-card-actions {
+  margin-left: 1rem;
+}
+
+.mat-card-title {
+  margin-top: .3rem;
+}
+
+@media screen and (min-width: 50em) {
+  .login {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  #logo {
+    display: none;
+  }
+}
+
+
+@media screen and (min-width: 60em) {
+  .login {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }
+
+  #logo {
+    display: block;
+    margin-top: 3rem;
+    height: auto;
+    width: 100%;
+    align-content: center;
+    p {
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+  }
+}

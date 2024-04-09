@@ -1,0 +1,29 @@
+<mat-card class="my-card">
+  <mat-card-header>
+    <div mat-card-avatar> <mat-icon>account_circle</mat-icon></div>
+    <mat-card-subtitle> {{facture.userNameId}} </mat-card-subtitle>
+    <mat-card-title> {{facture.dateReportId | date}} </mat-card-title>
+    <span class="spacer"></span>
+      <p>Monto: $<b>{{facture.amount}}</b> USD</p>
+  </mat-card-header>
+
+  <mat-divider inset></mat-divider>
+  <mat-expansion-panel class="mat-elevation-z0" [expanded] = "panelOpenState" (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-description>
+        Solicitud de revisión
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <mat-card-actions>
+      <form [formGroup] = "form" (ngSubmit) = "submitRequest()">
+        <mat-form-field class="full-width">
+           <mat-label> Solicitud </mat-label>
+           <textarea matInput placeholder="Describe tu problema" formControlName="description"></textarea>
+        </mat-form-field>
+        <button class="full-width" type = "submit" mat-stroked-button [disabled] = "form.invalid">Enviar</button>
+     </form>
+    </mat-card-actions>
+  </mat-expansion-panel>
+
+</mat-card>

@@ -1,0 +1,36 @@
+.spacer {
+  margin-right: 30px;
+}
+
+.spacer2 {
+  flex: 1 1 auto;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover, a:active {
+  color: lightgray;
+}
+
+.header{
+  position:fixed;
+  z-index: 1;
+  top: 0;
+}
+
+
+@media screen and (max-width: 60em) {
+  .mat-toolbar{
+    bottom: 0;
+    top: auto;
+  }
+}
+
+@media screen and (max-width: 35em) {
+  #allcom {
+    display: none;
+  }
+}

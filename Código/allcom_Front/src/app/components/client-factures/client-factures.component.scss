@@ -1,0 +1,17 @@
+.factures--grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  grid-gap: 5rem;
+  margin-top: 6rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  z-index: 0;
+  position: relative;
+  justify-content: center;
+}
+
+@media screen and (max-width: 60em) {
+  .factures--grid {
+    margin-top: 2.5rem;
+  }
+}

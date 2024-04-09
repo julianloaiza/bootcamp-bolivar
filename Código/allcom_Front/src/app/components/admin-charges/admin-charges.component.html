@@ -1,0 +1,31 @@
+<div class = group>
+  <mat-card class="class-card">
+    <div id = logo>
+      <img mat-card-image src="../../../assets/logo.png" alt="Cliente">
+    </div>
+    <mat-card-header>
+      <mat-card-title>Cobro manual a clientes</mat-card-title>
+      <mat-card-subtitle>
+        Con esta opción se crearán las nuevas facturas de cobro correspondientes
+      </mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p> Asegúrese de que <b>exista un archivo</b> que: </p>
+      <ul>
+        <li>Corresponda a un reporte que NO se haya generado con anterioridad <b>(Fecha única)</b></li>
+        <li>Esté en la Ubicación: <b>"C:\temp"</b></li>
+        <li>Tenga como nombre: <b>"Reporte.txt"</b></li>
+        <li>Su contenido este en el formato correcto: <br>
+          <b>Fecha <br>
+          Cliente|Hora|Tiempo|Ubicacion|Mensaje <br>
+          Cliente|Hora|Tiempo|Ubicacion|Mensaje <br>
+          ...
+          </b>
+        </li>
+      </ul>
+    </mat-card-content>
+    <mat-card-actions>
+      <button (click) = "generate()" mat-raised-button color="primary">GENERAR</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

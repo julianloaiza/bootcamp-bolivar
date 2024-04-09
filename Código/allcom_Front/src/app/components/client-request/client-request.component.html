@@ -1,0 +1,17 @@
+<mat-card class="my-card">
+  <mat-card-header>
+    <div mat-card-avatar> <mat-icon>account_circle</mat-icon></div>
+    <mat-card-subtitle> {{facture.userNameId}} </mat-card-subtitle>
+    <mat-card-title> {{facture.dateReportId | date}} </mat-card-title>
+    <span class="spacer"></span>
+      <p>Monto: <b>${{facture.amount}}</b> USD</p>
+  </mat-card-header>
+  <mat-divider inset></mat-divider>
+  <mat-card-actions>
+    <p id = "description"> {{request.description}}</p>
+  </mat-card-actions>
+  <mat-card-footer>
+    <mat-progress-bar mode="determinate" value="100" [color]="color_state"></mat-progress-bar>
+  </mat-card-footer>
+
+</mat-card>

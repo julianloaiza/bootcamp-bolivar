@@ -1,0 +1,17 @@
+<mat-toolbar color = "primary">
+  <mat-toolbar-row>
+    <span id = "allcom">AllCom</span>
+    <span class="spacer2"></span>
+    <a routerLink="/cliente/facturas" > Facturas </a>
+    <span class="spacer"></span>
+    <a mat-list-item routerLink="list-item-active"
+    routerLink="/cliente/solicitudes"> Solicitudes </a>
+    <span class="spacer"></span>
+    <a mat-list-item routerLinkActive="list-item-active"
+    routerLink="/cliente/tarifas"> Tarifas </a>
+    <span class="spacer"></span>
+    <button mat-icon-button (click)="return()">
+      <mat-icon>keyboard_return</mat-icon>
+    </button>
+  </mat-toolbar-row>
+</mat-toolbar>
